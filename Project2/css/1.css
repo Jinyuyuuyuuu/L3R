@@ -1,0 +1,156 @@
+body{
+	background-color: #ffffcc;
+  margin-left: -50px;
+  margin-top: -10px;
+  padding: 75px;
+/* cursor: url(../source/pen.png), auto;*/
+}
+body.squareMode #canvas{
+  cursor: url(../source/square.png), auto;
+}
+body.triangleMode #canvas{
+  cursor: url(../source/triangle.png), auto;
+}
+body.circleMode #canvas{
+  cursor: url(../source/circle.png), auto;
+}
+h1{
+	font-family: 'Mitr', sans-serif;
+	margin-top:50px;
+  margin-left: 550px;
+	font-size:60px; 
+  color:#cc0000;
+}
+.navigation{
+	margin-top: -75px;
+	margin-left: 1200px;
+	transform: scale(.8);
+}
+.circle {
+  height:150px;
+  width: 150px;
+  display: grid;
+  justify-content:center;
+  align-content:center;
+  border-radius: 50%;
+  background-color: black;
+  opacity: .65;
+  cursor: pointer;
+}
+
+.triangle{
+   width: 0;
+   height: 0;
+   border-bottom: 150px solid black;
+   border-left: 75px solid transparent;
+   border-right: 75px solid transparent;
+   display: grid;
+  opacity: .65;
+  cursor: pointer;
+}
+#tri{
+	align-self: center;
+	margin-left: -48px;
+	margin-top: 70px;
+	cursor: pointer;
+}
+#sq{
+	align-self: center;
+}
+.square {
+  height:150px;
+  width: 150px;
+  display:grid;
+  background-color: black;
+  opacity: .65;
+}
+.square.clicked{
+  cursor: url(../source/square.png), auto;
+}
+.circle.clicked{
+  cursor: url(../source/circle.png), auto;
+}
+.triangle.clicked{
+  cursor: url(../source/triangle.png), auto;
+}
+/*#circlenav.click{
+	animation: random 5s;
+}
+@keyframes  random {
+    15% { background-color: red; } 
+    30% { background-color: yellow; } 
+    45% { background-color: green; } 
+    60% { background-color: blue; }
+    75% { background-color: white; }  
+}*/
+#canvas{
+	margin-top: -458px;
+	margin-left: 372px;
+  margin-right: auto;
+	position: relative;
+  width:686px;
+  overflow: hidden;
+}
+#outline{
+  position: absolute;
+  margin-top: -408px;
+  margin-left: 335px;
+  z-index: -1;
+}
+#canvas img {
+  margin: -60px;
+
+   pointer-events: none;
+}
+
+.canvasCircle {
+	background: red;
+	width:80px;
+	height: 80px;
+	position: absolute;
+	border-radius: 50%;
+  pointer-events: none;
+}
+.canvasTriangle{
+	width: 0;
+   height: 0;
+   border-bottom: 80px solid black;
+   border-left: 40px solid transparent;
+   position: absolute;
+   border-right: 40px solid transparent;
+   pointer-events: none;
+}
+.canvasSquare {
+  background: blue;
+  width:80px;
+  height: 80px;
+  position: absolute;
+  pointer-events: none;
+}
+.button{
+	position: relative;
+   background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 70px;
+  margin-left: 80px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: #6699FF; 
+  color: white;
+}
+.buttons{
+	margin-left: 330px;
+}
+
+.circle.clicked{
+  content: url(../source/dialogue.png);
+
+}
